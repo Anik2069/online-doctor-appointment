@@ -15,38 +15,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.master');
+});
+Route::get('/dashboard', function () {
+    return view('admin.dashboard.dashboard');
 });
 
-// Route::get('/online-appointment',function () {
-//     return view('online_appointment_form');
-// });
-
-// Route::post('/online-appointment',function(HttpRequest $request){
-// //dd($request->patient_name);
-//     if($request->patient_name=="Anik"){
-//         return "Helo";
-//     }
-// });
-
-
-Route::get('/online-appointment','AppointmentController@onlineForm');
-Route::post('/online-appointment','AppointmentController@saveAppointment');
-
-Route::get('appointment-list','AppointmentController@appointList');
-
-Route::get('/show-details/{id}','AppointmentController@showDetails')->name('show-details');
-Route::get('/edit-appointment/{id}','AppointmentController@editAppointment')->name('edit-appointment');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-
-Route::get('/dashboard',"DashboardController")->name('dashboard');
-
-
-
-Route::get('/forms',function () {
-    return view('forms');
-});
