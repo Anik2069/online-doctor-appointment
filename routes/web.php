@@ -17,7 +17,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('layouts.master');
 });
-Route::get('/dashboard', function () {
-    return view('admin.dashboard.dashboard');
-});
+Route::get('/dashboard',"DashboardController")->name('dashboard');
 
