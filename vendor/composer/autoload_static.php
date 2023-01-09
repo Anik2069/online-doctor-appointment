@@ -34,12 +34,17 @@ class ComposerStaticInit9a3eb75edefd489da0ea2aca4aa2f2f4
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
+        '8d3b2199cd129cab173c6d6470bfbcb5' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/helper.php',
     );
 
     public static $prefixLengthsPsr4 = array (
         'v' => 
         array (
             'voku\\' => 5,
+        ),
+        'Y' => 
+        array (
+            'Yajra\\' => 6,
         ),
         'W' => 
         array (
@@ -167,6 +172,11 @@ class ComposerStaticInit9a3eb75edefd489da0ea2aca4aa2f2f4
         'voku\\' => 
         array (
             0 => __DIR__ . '/..' . '/voku/portable-ascii/src/voku',
+        ),
+        'Yajra\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yajra/laravel-oci8/src',
+            1 => __DIR__ . '/..' . '/yajra/laravel-pdo-via-oci8/src',
         ),
         'Whoops\\' => 
         array (
@@ -461,8 +471,19 @@ class ComposerStaticInit9a3eb75edefd489da0ea2aca4aa2f2f4
         'App\\Appointment' => __DIR__ . '/../..' . '/app/Appointment.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\Admin\\DashboardController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/DashboardController.php',
         'App\\Http\\Controllers\\AppointmentController' => __DIR__ . '/../..' . '/app/Http/Controllers/AppointmentController.php',
+        'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
+        'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
+        'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
+        'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
+        'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
+        'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
+        'App\\Http\\Controllers\\User\\DoctorController' => __DIR__ . '/../..' . '/app/Http/Controllers/User/DoctorController.php',
+        'App\\Http\\Controllers\\User\\UserDashboardController' => __DIR__ . '/../..' . '/app/Http/Controllers/User/UserDashboardController.php',
+        'App\\Http\\Controllers\\User\\UserHomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/User/UserHomeController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\CheckForMaintenanceMode' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckForMaintenanceMode.php',
@@ -544,6 +565,7 @@ class ComposerStaticInit9a3eb75edefd489da0ea2aca4aa2f2f4
         'Carbon\\FactoryImmutable' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/FactoryImmutable.php',
         'Carbon\\Language' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Language.php',
         'Carbon\\Laravel\\ServiceProvider' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Laravel/ServiceProvider.php',
+        'Carbon\\MessageFormatter\\MessageFormatterMapper' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/MessageFormatter/MessageFormatterMapper.php',
         'Carbon\\PHPStan\\AbstractMacro' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/PHPStan/AbstractMacro.php',
         'Carbon\\PHPStan\\Macro' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/PHPStan/Macro.php',
         'Carbon\\PHPStan\\MacroExtension' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/PHPStan/MacroExtension.php',
@@ -560,6 +582,7 @@ class ComposerStaticInit9a3eb75edefd489da0ea2aca4aa2f2f4
         'Carbon\\Traits\\IntervalStep' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Traits/IntervalStep.php',
         'Carbon\\Traits\\Localization' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Traits/Localization.php',
         'Carbon\\Traits\\Macro' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Traits/Macro.php',
+        'Carbon\\Traits\\MagicParameter' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Traits/MagicParameter.php',
         'Carbon\\Traits\\Mixin' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Traits/Mixin.php',
         'Carbon\\Traits\\Modifiers' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Traits/Modifiers.php',
         'Carbon\\Traits\\Mutability' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Traits/Mutability.php',
@@ -4924,6 +4947,27 @@ class ComposerStaticInit9a3eb75edefd489da0ea2aca4aa2f2f4
         'Whoops\\Util\\Misc' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/Misc.php',
         'Whoops\\Util\\SystemFacade' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/SystemFacade.php',
         'Whoops\\Util\\TemplateHelper' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/TemplateHelper.php',
+        'Yajra\\Oci8\\Auth\\OracleUserProvider' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Auth/OracleUserProvider.php',
+        'Yajra\\Oci8\\Connectors\\OracleConnector' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Connectors/OracleConnector.php',
+        'Yajra\\Oci8\\Eloquent\\OracleEloquent' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Eloquent/OracleEloquent.php',
+        'Yajra\\Oci8\\Oci8Connection' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Oci8Connection.php',
+        'Yajra\\Oci8\\Oci8ServiceProvider' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Oci8ServiceProvider.php',
+        'Yajra\\Oci8\\Oci8ValidationServiceProvider' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Oci8ValidationServiceProvider.php',
+        'Yajra\\Oci8\\OracleReservedWords' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/OracleReservedWords.php',
+        'Yajra\\Oci8\\Query\\Grammars\\OracleGrammar' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Query/Grammars/OracleGrammar.php',
+        'Yajra\\Oci8\\Query\\OracleBuilder' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Query/OracleBuilder.php',
+        'Yajra\\Oci8\\Query\\Processors\\OracleProcessor' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Query/Processors/OracleProcessor.php',
+        'Yajra\\Oci8\\Schema\\Comment' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Schema/Comment.php',
+        'Yajra\\Oci8\\Schema\\Grammars\\OracleGrammar' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Schema/Grammars/OracleGrammar.php',
+        'Yajra\\Oci8\\Schema\\OracleAutoIncrementHelper' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Schema/OracleAutoIncrementHelper.php',
+        'Yajra\\Oci8\\Schema\\OracleBlueprint' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Schema/OracleBlueprint.php',
+        'Yajra\\Oci8\\Schema\\OracleBuilder' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Schema/OracleBuilder.php',
+        'Yajra\\Oci8\\Schema\\Sequence' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Schema/Sequence.php',
+        'Yajra\\Oci8\\Schema\\Trigger' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Schema/Trigger.php',
+        'Yajra\\Oci8\\Validation\\Oci8DatabasePresenceVerifier' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Validation/Oci8DatabasePresenceVerifier.php',
+        'Yajra\\Pdo\\Oci8' => __DIR__ . '/..' . '/yajra/laravel-pdo-via-oci8/src/Pdo/Oci8.php',
+        'Yajra\\Pdo\\Oci8\\Exceptions\\Oci8Exception' => __DIR__ . '/..' . '/yajra/laravel-pdo-via-oci8/src/Pdo/Oci8/Exceptions/Oci8Exception.php',
+        'Yajra\\Pdo\\Oci8\\Statement' => __DIR__ . '/..' . '/yajra/laravel-pdo-via-oci8/src/Pdo/Oci8/Statement.php',
         'voku\\helper\\ASCII' => __DIR__ . '/..' . '/voku/portable-ascii/src/voku/helper/ASCII.php',
     );
 

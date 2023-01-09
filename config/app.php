@@ -173,6 +173,7 @@ return [
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
+        Yajra\Oci8\Oci8ServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
     ],
